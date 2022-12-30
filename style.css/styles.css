@@ -16,6 +16,7 @@ body {
   --main-text-color: #212121;
   --description-text-color: #757575;
   --border-bottom-header: #ececec;
+  --showcase-bg: rgba(47, 48, 58, 0.4);
 }
 
 *,
@@ -153,7 +154,7 @@ a {
   background-color: var(--accent-color);
   text-align: center;
   padding: 200px 0px;
-  background-image: url('.images/icons.svg#icon-header');
+  background-image: url('../images/header.jpg');
 }
 
 .hero-title {
