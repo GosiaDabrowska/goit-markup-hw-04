@@ -254,6 +254,35 @@ a {
   text-align: center;
 }
 
+.social-media-box {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+  justify-content: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social-media:last-child {
+  margin-right: 0px;
+}
+
+.social-media:hover,
+.social-media:focus {
+  --color3: var(--background-color);
+  background-color: var(--action-color);
+  cursor: pointer;
+}
+
 footer {
   background-color: var(--accent-color);
   padding-top: 60px;
