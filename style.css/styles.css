@@ -125,16 +125,17 @@ nav {
 }
 
 .header-contact {
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--description-text-color);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.header-contact:hover {
-  color: var(--action-color);
-}
-
+.header-contact:hover,
 .header-contact:focus {
   color: var(--action-color);
 }
