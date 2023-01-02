@@ -124,7 +124,7 @@ nav {
   gap: 50px;
 }
 
-.header-contact {
+.contact-list a {
   display: flex;
   font-weight: 500;
   line-height: 1.14;
@@ -133,16 +133,20 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.header-contact:hover,
-.header-contact:focus {
-  color: var(--action-color);
+  fill: var(--brand-grey-svg-icons);
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.contact-list li:hover,
+.contact-list li:focus,
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--action-color);
+  fill: var(--action-color);
 }
 
 .hero-section {
@@ -153,6 +157,9 @@ a {
     url('../images/header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1600px;
+  max-height: 600px;
+  margin: auto;
 }
 
 .hero-title {
@@ -195,10 +202,8 @@ a {
 .atuts-icons {
   background-color: var(--section-color);
   margin-bottom: 30px;
-}
-
-.atuts-icons-svg {
-  margin: 25px 100px;
+  padding: 25px 100px;
+  border-radius: 4px;
 }
 
 .atuts-header {
@@ -260,13 +265,11 @@ a {
 .social-media-box {
   display: flex;
   margin-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
+  gap: 10px;
   justify-content: center;
 }
 
 .footer-box {
-  padding-top: 20px;
   margin-left: 0px;
 }
 
@@ -277,7 +280,8 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 10px;
+  fill: var(--brand-white);
+  background-color: var(--social-media-footer-color);
 }
 
 .social-media-box li:last-child {
@@ -286,7 +290,7 @@ a {
 
 .social-media-box li:hover,
 .social-media-box li:focus {
-  --color3: var(--brand-white);
+  fill: var(--brand-white);
   background-color: var(--action-color);
   cursor: pointer;
 }
@@ -294,23 +298,23 @@ a {
 .client-wrap {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
   gap: 30px;
 }
 
 .client-wrap li {
-  --color2: var(--brand-grey-svg-icons);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--brand-grey-svg-icons);
   border-radius: 4px;
-  padding: 16px 32px;
+  fill: var(--brand-grey-svg-icons);
 }
 
 .client-wrap li:hover,
 .client-wrap li:focus {
-  --color2: var(--action-color);
-  --color3: var(--action-color);
+  fill: var(--action-color);
   cursor: pointer;
 }
 
@@ -361,25 +365,17 @@ footer {
 
 .footer-wrap {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
-.social-media-footer {
-  --color3: var(--brand-white);
-  background-color: var(--social-media-footer-color);
-}
-
-h4 {
+.join-us {
   color: var(--brand-white);
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.03em;
   font-weight: 700;
-}
-
-.join-us {
-  padding-top: 12px;
 }
 
 /* Poniżej są style css odrębne dla drugiej strony projektu */
